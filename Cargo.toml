@@ -1,0 +1,26 @@
+[package]
+name = "zstd"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mark H. Colburn <colburn.mark@gmail.com>"]
+description = "Rust implementation of ZStandard compression library."
+repository = "https://github.com/markcol/zstd-rs"
+readme = "README.md"
+license = "BSD"
+keywords = ["zstd", "zstandard", "compression"]
+categories = ["compression", "api-bindings"]
+exclude = [
+    ".editorconfig",
+    ".rustfmt.toml",
+    ".travis.yml"
+]
+publish = false
+
+[badges]
+travis-ci = { repository = "markcol/zstd-rs", branch = "master" }
+coveralls = { repository = "markcol/zstd-rs", branch = "master", service = "github" }
+
+[dependencies]
+failure = "0.1"
+log = "0.4"
+derive_more = "0.13"
